@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="./todo.css">
+    <script src="./todo.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="todo_header">Todos</h1>
+
+        <div class="todo_blank">
+            <p class="todo_p">What task will you like to create today?</p>
+            <div class="img_cont">
+                <img src="./todo.svg" alt="todo image" class="img_todo">
+            </div>
+        </div>
+
+        <div class="button">
+            <button type="submit" class="todo_submit" id="js_submit"> Create Todo</button>
+        </div>
+
+        <ul class="todo_list" id="js_list"></ul>
+
+        <form class="todo_form" id="js_form">
+            <input 
+            type="text" 
+            name="title" 
+            id="title" 
+            placeholder="Enter a title" required>
+
+            <input 
+            type="datetime-local" 
+            name="date" 
+            id="date" required>
+            
+            <input 
+            type="text" 
+            name="description" 
+            id="description" placeholder="Description" required>
+            
+            <button type="submit" class="todo_submit" id="js_addButn"> Add Todo</button>
+        </form>
+    </div>
+    
+</body>
+</html>
